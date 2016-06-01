@@ -1,0 +1,23 @@
+body{
+    background-color: #161616;
+}
+
+hr{
+    background-color: #292929;
+    height: 1px;
+    border: none
+}
+
+.pagename{
+    margin-top: 3%;
+    color: #737373;
+}
+
+h3{
+    font-family: "Microsoft YaHei UI";
+    color: white;
+}
+
+p{
+    color: #525252;
+}

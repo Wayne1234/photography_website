@@ -1,0 +1,53 @@
+/*!
+ * Start Bootstrap - Portfolio Item HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #161616;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+#fh5co-board .item .fh5co-board-img {
+    overflow: hidden;
+}
+#fh5co-board .item .image-popup:hover img {
+    opacity: .2;
+}
+
+#mainimg{
+    width: 100%;
+}
+hr{
+    background-color: #292929;
+    height: 1px;
+    border: none
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Microsoft YaHei UI Light";
+}
+
+.picname,.describe,.detail,.re{
+    color: #a2a2a9;
+}
+
+.paragraph,.list{
+    color: #484848;
+    font-family: "Microsoft YaHei UI";
+    font-size: medium;
+}
+
+.photographer{
+    color: #484848;
+}
+

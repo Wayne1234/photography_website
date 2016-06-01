@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Detail</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/detail.js"></script>
+
+    <!--警告！这里有个非常诡异的bug，如果加入jquery.js将会导致错误，没有动态效果-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Legend Pic</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="popular.html">Popular</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        All <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="landscape.html">Landscape</a></li>
+                        <li><a href="#">Street</a></li>
+                        <li><a href="#">Portrait</a></li>
+                        <li><a href="#">Architecture</a> </li>
+                        <li><a href="#">Still life</a> </li>
+                        <li><a href="#">Food</a> </li>
+                        <li><a href="#">Animals</a> </li>
+                        <li class="divider"></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Portfolio Item Heading -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="picname" id="photo">
+
+            </h1>
+            <h5 class="photographer" id="author">
+
+            </h5>
+            <hr>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+        <div class="col-md-12">
+            <a href="" class="image-popup fh5co-board-img" id="popup">
+                <img src="" id="mainimg">
+            </a>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="describe">描述</h3>
+            <p class="paragraph" id="content">
+
+            </p>
+            <h3 class="detail">细节</h3>
+            <ul class="list">
+                <li id="thesize">  </li>
+                <li id="thetime">  </li>
+                <li>购买印刷品</li>
+                <li>更多</li>
+            </ul>
+        </div>
+
+
+    </div>
+    <hr>
+
+    <!-- Related Projects Row -->
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h3 class="re">相关图片</h3>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <a href="#" id="relink1">
+                <img class="img-responsive portfolio-item" id="resrc1" src="" alt="">
+            </a>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <a href="#" id="relink2">
+                <img class="img-responsive portfolio-item" id="resrc2" src="" alt="">
+            </a>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <a href="#" id="relink3">
+                <img class="img-responsive portfolio-item" id="resrc3" src="" alt="">
+            </a>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <a href="#" id="relink4">
+                <img class="img-responsive portfolio-item" id="resrc4" src="" alt="">
+            </a>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Legend Pic</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </footer>
+
+</div>
+
+<!-- Bootstrap Core JavaScript -->
+
+<!--警告，在这个地方载入bootstrap的js文件会导致all的下拉菜单无法使用，建议所有js的引用都写在head中-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+
+</body>
+
+</html>
