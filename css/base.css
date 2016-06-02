@@ -144,10 +144,10 @@ body {
     }
 }
 
-.page {
-    background: #1A1A1A url('../img/inner_bck.jpg') 50% 0% no-repeat;
-    text-align: center
-}
+/*.page {*/
+    /*background: #1A1A1A url('../img/inner_bck.jpg') 50% 0% no-repeat;*/
+    /*text-align: center*/
+/*}*/
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, time {
     display: block

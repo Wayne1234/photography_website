@@ -2,85 +2,39 @@
 <html lang="zh-CN" style="overflow: hidden;">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-    <!--<base href="/">-->
-    <base href=".">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link type="text/css" rel="stylesheet" href="css/index.css">
-    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
-    <!--<link href="css/bootstrapGray.css" rel="stylesheet">-->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script async="" src="js/analytics.js"></script>
+    <script type="text/javascript" src="js/analytics.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-26556216-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-    <!--[if lt IE 9]>
-    <script>
-        document.createElement('header');
-        document.createElement('nav');
-        document.createElement('section');
-        document.createElement('article');
-        document.createElement('aside');
-        document.createElement('footer');
-        document.createElement('hgroup');
-    </script>
-    <![endif]-->
-
+    <script type="text/javascript" src="js/loadIndexPic.js"></script>
     <title>Legend Pic</title>
 </head>
 
-<body class="index-page" style="font-size: 6.69556px;">
+<body class="index-page">
 
-<div id="parallax" class="Parallax"
-     style="width: 5646px; height: 100%; overflow-x: visible; position: fixed; left: 0px;">
+<div id="parallax" class="Parallax" style="width: 5646px; height: 100%; overflow-x: visible; position: fixed; left: 0px;">
     <img data-speed="0.1" class="parallaxBackground" src="IndexResource/bck.jpg" alt=""
          style="min-height: 100%; display: inline-block; overflow: visible; position: absolute; left: 0px; transform: translate3d(-55.75px, 0px, 0px); z-index: auto;">
     <div id="intro" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
-        <img src="IndexResource/blank.png" class="intro-pic intro-1stImg" alt=""
-             style="position: absolute; left: 75.5px; bottom: auto;">
         <img data-speed="1.5" src="IndexResource/1-intro.jpg" class="intro-pic" alt=""
              style="display: inline-block; overflow: visible; position: absolute; left: 0px; transform: translate3d(75.5px, 0px, 0px); bottom: auto;">
         <img data-speed="2.5" src="IndexResource/1-leaf.png" class="intro-pic" alt=""
              style="display: inline-block; overflow: visible; position: absolute; left: 0px; transform: translate3d(75.5px, 0px, 0px); bottom: auto;">
-        <div class="fullScreen topCaption" data-speed="4"
-             style="display: inline-block; overflow: visible; position: absolute; left: 0px;">
+        <div class="fullScreen topCaption" data-speed="4" style="display: inline-block; overflow: visible; position: absolute; left: 0px;">
             <h1 style="font-family: 'Microsoft JhengHei UI Light'">Legend Pic</h1>
-            <h1 style="font-family: 'Microsoft YaHei UI Light'"><br>发现世界之美</h1>
-            <!--<h2 style="font-family: 'Microsoft JhengHei UI Light';font-size: 10px;color: #c9cccc"><br><br><br><br><br><br><br><br><br><br><br><br>林间路 @IldikoNeer</h2>-->
-
+            <h1 style="font-family: 'Microsoft JhengHei UI Light'"><br>发现世界之美</h1>
         </div>
-        <img data-speed="5.5" class="test-subject" src="IndexResource/blank2.png" alt=""
-             style="display: inline-block; overflow: visible; position: absolute; left: 0px; transform: translate3d(75.5px, 0px, 0px); bottom: auto;">
     </div>
 
-    <div id="bcode" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
+    <div id="page2" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
         <div class="fullScreen" data-speed="1" style="position: absolute;">
             <div class="table">
                 <div class="cell">
-                    <img src="IndexResource/2-landscape.jpg" alt="" class="plLayer bcodeLayer">
+                    <img src="IndexResource/2-landscape.jpg" class="plLayer bcodeLayer">
                 </div>
             </div>
         </div>
@@ -89,17 +43,11 @@
                 <a href="landscape.html" style="font-family: 'Microsoft JhengHei UI Light'">Landscapes 自然风光</a>
             </h2>
         </div>
-        <div class="topCaption link-shadow">
-            <div class="h1" data-speed="2.5"
-                 style="display: inline-block; overflow: visible; position: absolute; left: 0px; transform: translate3d(1483.5px, 0px, 0px);">
-                <a href="landscape.html"></a>
-            </div>
-        </div>
     </div>
 
-    <div id="kynsi" class="" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
+    <div id="page3" class="" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
         <div class="fullScreen text-center" data-speed="1" style="position: absolute; display: none;">
-            <img class="kynsi-pic" src="IndexResource/3-portrait.jpg" style="position:static !important" alt="">
+            <img class="kynsi-pic" src="IndexResource/3-portrait.jpg" style="position:static !important" >
         </div>
         <div class="topCaption" style="display: none;">
             <h2 data-speed="1.8"
@@ -108,23 +56,15 @@
             </h2>
         </div>
         <div class="kynsi-text" data-speed="4" style="display: none; overflow: visible; position: absolute; left: 0px;">
-            <img class="kynsi-text-img" src="IndexResource/3-portrait-logo.png" alt="">
+            <img class="kynsi-text-img" src="IndexResource/3-portrait-logo.png">
         </div>
     </div>
 
-    <div id="digitalTrip" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
-        <!--<div data-speed="0.75" class="text-center fullScreen"-->
-             <!--style="display: none; overflow: visible; position: absolute; left: 0px;">-->
-            <!--<div class="table">-->
-                <!--<div class="cell">-->
-                    <!--<img class="DT-img" src="IndexResource/stones-back.png" alt="">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+    <div id="page4" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
         <div class="fullScreen text-center" data-speed="1" style="position: absolute; display: none;">
             <div class="table">
                 <div class="cell">
-                    <img class="DT-img DT-upperImage" src="IndexResource/4-architecture.jpg" alt="">
+                    <img class="DT-img DT-upperImage" src="IndexResource/4-architecture.jpg">
                 </div>
             </div>
         </div>
@@ -132,7 +72,7 @@
              style="display: none; overflow: visible; position: absolute; left: 0px;">
             <div class="table">
                 <div class="cell">
-                    <img class="DT-img DT-frontImg" src="IndexResource/4-frame.png" alt="">
+                    <img class="DT-img DT-frontImg" src="IndexResource/4-frame.png">
                 </div>
             </div>
         </div>
@@ -140,7 +80,7 @@
              style="display: none; overflow: visible; position: absolute; left: 0px;">
             <div class="table">
                 <div class="cell">
-                    <img class="DT-img" src="IndexResource/4-frame2.png" alt="">
+                    <img class="DT-img" src="IndexResource/4-frame2.png">
                 </div>
             </div>
         </div>
@@ -150,49 +90,31 @@
         </div>
     </div>
 
-    <div id="kis2015" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
+    <div id="still-life" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
         <div class="fullScreen" data-speed="2" style="display: none; overflow: visible; position: absolute; left: 0px;">
             <div class="table">
-                <div class="cell"><img src="IndexResource/5-still-life.jpg" class="plLayer kisLayer03"
-                                       alt=""></div>
+                <div class="cell"><img src="IndexResource/5-still-life.jpg" class="plLayer kisLayer03"></div>
             </div>
         </div>
         <div class="fullScreen topCaption" data-speed="2"
              style="display: none; overflow: visible; position: absolute; left: 0px;">
             <h2>
-                <a href="#" style="font-family: 'Microsoft JhengHei UI Light'">
-                    Still Life 静物
-                </a>
+                <a href="#" style="font-family: 'Microsoft JhengHei UI Light'">Still Life 静物</a>
             </h2>
         </div>
         <div class="fullScreen" data-speed="7" style="display: none; overflow: visible; position: absolute; left: 0px;">
             <div class="table">
-                <div class="cell"><img src="IndexResource/5-fly.png" class="plLayer kisLayer01"
-                                       alt=""></div>
+                <div class="cell"><img src="IndexResource/5-fly.png" class="plLayer kisLayer01"></div>
             </div>
         </div>
     </div>
 
-    <div id="bilet2u" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
-
-        <img data-speed="0.75" src="IndexResource/l-1.png" class="b2u-l-1" alt=""
-             style="display: none; overflow: visible; position: absolute; left: 0px;">
-
+    <div id="more" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
         <div data-speed="1" class="fullScreen text-center" style="position: absolute; display: none;">
-
-            <img src="IndexResource/6-final.jpg" class="b2u-man" alt="">
+            <img src="IndexResource/6-final.jpg" class="b2u-man">
         </div>
-
-        <img data-speed="1.5" src="IndexResource/6-color3.png" class="b2u-l0" alt=""
-             style="display: none; overflow: visible; position: absolute; left: 0px;">
-        <img data-speed="2.5" src="IndexResource/6-color4.png" class="b2u-l1" alt=""
-             style="display: none; overflow: visible; position: absolute; left: 0px;">
-
-        <!--<div data-speed="2.5" class="text-center fillParent"-->
-             <!--style="display: none; overflow: visible; position: absolute; left: 0px;">-->
-            <!--<img src="IndexResource/logo.png" class="bilet2uLogo" alt="">-->
-        <!--</div>-->
-
+        <img data-speed="1.5" src="IndexResource/6-color3.png" class="b2u-l0" style="display: none; overflow: visible; position: absolute; left: 0px;">
+        <img data-speed="2.5" src="IndexResource/6-color4.png" class="b2u-l1" style="display: none; overflow: visible; position: absolute; left: 0px;">
         <div class="topCaption yStack" style="display: none;">
             <h2 data-speed="2.5" style="display: inline-block; overflow: visible; position: absolute; left: 0px;">
                 <a href="#" style="font-family: 'Microsoft JhengHei UI Light'">More 更多分类</a>
@@ -200,11 +122,11 @@
         </div>
         <div data-speed="4" class="b2u-confetti left"
              style="display: none; overflow: visible; position: absolute; left: 0px;">
-            <img src="IndexResource/6-color.png" class="b2u-r-specle" alt="">
+            <img src="IndexResource/6-color.png" class="b2u-r-specle">
         </div>
         <div data-speed="10" class="b2u-confetti right"
              style="display: none; overflow: visible; position: absolute; left: 0px;">
-            <img src="IndexResource/6-color2.png" class="b2u-y-specle" alt="">
+            <img src="IndexResource/6-color2.png" class="b2u-y-specle">
         </div>
 
         <div class="topCaption link-shadow" style="display: none;">
@@ -217,10 +139,10 @@
 </div>
 
 <a class="right-arrow touch">
-    <img src="IndexResource/arrow_right.png" alt="">
+    <img src="IndexResource/arrow_right.png">
 </a>
 <a class="left-arrow touch">
-    <img src="IndexResource/arrow_left.png" alt="">
+    <img src="IndexResource/arrow_left.png">
 </a>
 
 
@@ -251,10 +173,7 @@
 </div>
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
-<!--<script src="js/jquery.js"></script>-->
-<!--<script src="js/bootstrap.js"></script>-->
-<!--<script async="" src="js/analytics.js"></script>-->
-<!--<script type="text/javascript" src="js/modernizr.custom.js"></script>-->
-
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
