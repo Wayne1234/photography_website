@@ -8,21 +8,21 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/loadIndexPic.js"></script>
     <script type="text/javascript" src="js/analytics.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="js/loadIndexPic.js"></script>
     <title>Legend Pic</title>
 </head>
 
 <body class="index-page">
 
 <div id="parallax" class="Parallax" style="width: 5646px; height: 100%; overflow-x: visible; position: fixed; left: 0px;">
-    <img data-speed="0.1" class="parallaxBackground" src="IndexResource/bck.jpg" alt=""
+    <img id="bck" data-speed="0.1" class="parallaxBackground" src=""
          style="min-height: 100%; display: inline-block; overflow: visible; position: absolute; left: 0px; transform: translate3d(-55.75px, 0px, 0px); z-index: auto;">
     <div id="intro" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
-        <img data-speed="1.5" src="IndexResource/1-intro.jpg" class="intro-pic" alt=""
+        <img id="intropic" data-speed="1.5" src="" class="intro-pic" alt=""
              style="display: inline-block; overflow: visible; position: absolute; left: 0px; transform: translate3d(75.5px, 0px, 0px); bottom: auto;">
-        <img data-speed="2.5" src="IndexResource/1-leaf.png" class="intro-pic" alt=""
+        <img id="intro-leaf" data-speed="2.5" src="" class="intro-pic" alt=""
              style="display: inline-block; overflow: visible; position: absolute; left: 0px; transform: translate3d(75.5px, 0px, 0px); bottom: auto;">
         <div class="fullScreen topCaption" data-speed="4" style="display: inline-block; overflow: visible; position: absolute; left: 0px;">
             <h1 style="font-family: 'Microsoft JhengHei UI Light'">Legend Pic</h1>
@@ -34,7 +34,7 @@
         <div class="fullScreen" data-speed="1" style="position: absolute;">
             <div class="table">
                 <div class="cell">
-                    <img src="IndexResource/2-landscape.jpg" class="plLayer bcodeLayer">
+                    <img id="landscape" src="" class="plLayer bcodeLayer">
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
 
     <div id="page3" class="" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
         <div class="fullScreen text-center" data-speed="1" style="position: absolute; display: none;">
-            <img class="kynsi-pic" src="IndexResource/3-portrait.jpg" style="position:static !important" >
+            <img  id="portrait-pic" class="kynsi-pic" src="" style="position:static !important" >
         </div>
         <div class="topCaption" style="display: none;">
             <h2 data-speed="1.8"
@@ -56,7 +56,7 @@
             </h2>
         </div>
         <div class="kynsi-text" data-speed="4" style="display: none; overflow: visible; position: absolute; left: 0px;">
-            <img class="kynsi-text-img" src="IndexResource/3-portrait-logo.png">
+            <img id="portrait-text" class="kynsi-text-img" src="">
         </div>
     </div>
 
@@ -64,7 +64,7 @@
         <div class="fullScreen text-center" data-speed="1" style="position: absolute; display: none;">
             <div class="table">
                 <div class="cell">
-                    <img class="DT-img DT-upperImage" src="IndexResource/4-architecture.jpg">
+                    <img id="architecture-pic" class="DT-img DT-upperImage" src="">
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
              style="display: none; overflow: visible; position: absolute; left: 0px;">
             <div class="table">
                 <div class="cell">
-                    <img class="DT-img DT-frontImg" src="IndexResource/4-frame.png">
+                    <img id="frame1" class="DT-img DT-frontImg" src="">
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
              style="display: none; overflow: visible; position: absolute; left: 0px;">
             <div class="table">
                 <div class="cell">
-                    <img class="DT-img" src="IndexResource/4-frame2.png">
+                    <img id="frame2" class="DT-img" src="">
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
     <div id="still-life" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
         <div class="fullScreen" data-speed="2" style="display: none; overflow: visible; position: absolute; left: 0px;">
             <div class="table">
-                <div class="cell"><img src="IndexResource/5-still-life.jpg" class="plLayer kisLayer03"></div>
+                <div class="cell"><img id="still-life-pic" src="" class="plLayer kisLayer03"></div>
             </div>
         </div>
         <div class="fullScreen topCaption" data-speed="2"
@@ -104,17 +104,17 @@
         </div>
         <div class="fullScreen" data-speed="7" style="display: none; overflow: visible; position: absolute; left: 0px;">
             <div class="table">
-                <div class="cell"><img src="IndexResource/5-fly.png" class="plLayer kisLayer01"></div>
+                <div class="cell"><img id="still-life-fly" src="" class="plLayer kisLayer01"></div>
             </div>
         </div>
     </div>
 
     <div id="more" style="height: 100%; position: relative; float: left; overflow: hidden; width: 941px;">
         <div data-speed="1" class="fullScreen text-center" style="position: absolute; display: none;">
-            <img src="IndexResource/6-final.jpg" class="b2u-man">
+            <img id="more-pic" src="" class="b2u-man">
         </div>
-        <img data-speed="1.5" src="IndexResource/6-color3.png" class="b2u-l0" style="display: none; overflow: visible; position: absolute; left: 0px;">
-        <img data-speed="2.5" src="IndexResource/6-color4.png" class="b2u-l1" style="display: none; overflow: visible; position: absolute; left: 0px;">
+        <img id="more-pic-color3" data-speed="1.5" src="" class="b2u-l0" style="display: none; overflow: visible; position: absolute; left: 0px;">
+        <img id="more-pic-color4" data-speed="2.5" src="" class="b2u-l1" style="display: none; overflow: visible; position: absolute; left: 0px;">
         <div class="topCaption yStack" style="display: none;">
             <h2 data-speed="2.5" style="display: inline-block; overflow: visible; position: absolute; left: 0px;">
                 <a href="#" style="font-family: 'Microsoft JhengHei UI Light'">More 更多分类</a>
@@ -122,11 +122,11 @@
         </div>
         <div data-speed="4" class="b2u-confetti left"
              style="display: none; overflow: visible; position: absolute; left: 0px;">
-            <img src="IndexResource/6-color.png" class="b2u-r-specle">
+            <img id="more-pic-color" src="" class="b2u-r-specle">
         </div>
         <div data-speed="10" class="b2u-confetti right"
              style="display: none; overflow: visible; position: absolute; left: 0px;">
-            <img src="IndexResource/6-color2.png" class="b2u-y-specle">
+            <img id="more-pic-color2" src="" class="b2u-y-specle">
         </div>
 
         <div class="topCaption link-shadow" style="display: none;">
@@ -171,8 +171,6 @@
         </li>
     </ul>
 </div>
-<script type="text/javascript" src="js/base.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>
