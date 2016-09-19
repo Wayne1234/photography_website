@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="Author" content="刘江波">
+    <script type="text/javascript">
+        function login() {
+            var userName = document.getElementById("userName").value;
+            var pwd = document.getElementById("pwd").value;
+            var repwd = document.getElementById("repwd").value;
+            var address = document.getElementById("address").value;
+            var matchResult = true;
+            if (userName == "" || pwd == "" || repwd == "" || address == "") {
+                alert("请确认是否有空缺项！");
+                matchResult = false;
+            } else if (userName.length < 6 || userName.length > 20) {
+                alert("用户名长度应在6到20个字符之间！");
+                matchResult = false;
+            } else if (userName == pwd || userName == repwd) {
+                alert("密码或重复密码不能和用户名相同！");
+                matchResult = false;
+            } else if (pwd.length < 6 || pwd.length > 20 || repwd.length < 6 || repwd.length > 20) {
+                alert("密码或重复密码长度应在6到20个字符之间！");
+                matchResult = false;
+            } else if (pwd != repwd) {
+                alert("密码和重复密码不同，请重新输入！");
+                matchResult = false;
+            } else if (userName.length < 6 || userName.length > 20) {
+                alert("用户名长度应在6到20个字符之间！");
+                matchResult = false;
+            }
+
+            if (matchResult == true) {
+                var mailreg = /^\w+@\w+(\.\w+)+$/;
+                if (!address.match(mailreg)) {
+                    alert("邮箱格式不正确");
+                    matchResult = false;
+                }
+            }
+            if (matchResult == true) {
+                if (userName.charAt(0) >= 0 && userName.charAt(0) <= 9) {
+                    alert("用户名不能以数字字符开始！");
+                    matchResult = false;
+                }
+            }
+            return matchResult;
+        }
+    </script>
+    <title>测试</title>
+</head>
+
+<body>
+<center>
+    <form name="loginForm" action="php/getUserPassword.php" onsubmit="return login()" method="get">
+        <table bgcolor="#6666FF" width="300" cellspacing="0" cellpadding="0" border="0" align="left" valign="top">
+            <tr>
+                <td id="texthere" class="table-title" colspan="2" align="center" bgcolor="#3366FF">用户注册</td>
+            </tr>
+            <tr>
+                <td width="130" height="28" align="left">测试</td>
+                <td><input id="userName" name="userName" type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td width="80" height="28" align="left">登录密码</td>
+                <td><input id="pwd" name="pwd" type="password" class="input"></td>
+            </tr>
+            <tr>
+                <td width="80" height="28" align="left">重复输入密码</td>
+                <td><input id="repwd" name="repwd" type="password" class="input"></td>
+            </tr>
+            <tr>
+                <td width="80" height="28" align="left">有效邮箱地址</td>
+                <td><input id="address" name="address" type="text" class="input"></td>
+            </tr>
+            <tr>
+
+                <!--<td width="10" height="28" align="left"></td>-->
+                <td colspan="2"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="登录">
+                    <input type="button" value="取消" onClick="reset()"></td>
+            </tr>
+        </table>
+    </form>
+</center>
+
+</body>
+</html>
+
